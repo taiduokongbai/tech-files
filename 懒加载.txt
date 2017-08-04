@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		img {
+			display: block;
+			width: 400px;
+			min-height: 560px;
+		}
+	</style>
+	<script type="text/javascript">
+		var imgs;
+		window.onload = function() {
+			imgs = document.getElementsByTagName("img");
+			document.onscroll = watchScrollPos;
+
+			watchScrollPos();
+		}
+
+		function watchScrollPos() {
+			// 加载两屏幕范围内的图片
+			var lazyLoadArea = document.documentElement.clientHeight * 2;
+			var pos = document.body.scrollTop || document.documentElement.scrollTop;
+			for (var i = 0; i < imgs.length; i++) {
+				// 当图片进入指定区域后。开始加载图片
+				if(imgs[i].offsetTop < pos + lazyLoadArea) {
+					imgs[i].src = imgs[i].getAttribute("realpath");
+				}
+			}
+
+		}
+	</script>
+</head>
+<body>
+<img src="img/loading.gif" realpath="img/1.jpg" >
+<img src="img/loading.gif" realpath="img/2.jpg" >
+<img src="img/loading.gif" realpath="img/3.jpg" >
+<img src="img/loading.gif" realpath="img/4.jpg" >
+<img src="img/loading.gif" realpath="img/5.jpg" >
+<img src="img/loading.gif" realpath="img/6.jpg" >
+<img src="img/loading.gif" realpath="img/7.jpg" >
+<img src="img/loading.gif" realpath="img/8.jpg" >
+<img src="img/loading.gif" realpath="img/9.jpg" >
+<img src="img/loading.gif" realpath="img/10.jpg" >
+<img src="img/loading.gif" realpath="img/11.jpg" >
+<img src="img/loading.gif" realpath="img/12.jpg" >
+<img src="img/loading.gif" realpath="img/13.jpg" >
+<img src="img/loading.gif" realpath="img/14.jpg" >
+<img src="img/loading.gif" realpath="img/15.jpg" >
+<img src="img/loading.gif" realpath="img/16.jpg" >
+</body>
+</html>

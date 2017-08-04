@@ -1,0 +1,29 @@
+获取当前地理位置经纬度    转换为具体位置：
+
+
+		    var x=document.getElementById("demo");
+		    getLocation();
+		    function getLocation(){
+		        if (navigator.geolocation){
+		            navigator.geolocation.getCurrentPosition(showPosition);
+		        }else{
+		            x.innerHTML="Geolocation is not supported by this browser.";
+		        }
+		    }
+
+		    function showPosition(position){
+		        var lat = position.coords.latitude;
+		        var log = position.coords.longitude;
+		        province(lat,log);
+		    }
+		    
+		    function province(lat,log){
+			    var map = new BMap.Map("allmap");
+				var point = new BMap.Point(log,lat);
+				var gc = new BMap.Geocoder();
+				gc.getLocation(point, function(rs){
+				   var addComp = rs.addressComponents;
+				   alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+				});		    	
+			    	
+		    }

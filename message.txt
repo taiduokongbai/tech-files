@@ -1,0 +1,5 @@
+let msg = ''
+                json.message.map(item => {
+                    msg += item.field == "" ? item.msg : ''
+                })
+                message.info(msg);

@@ -1,0 +1,30 @@
+移动端 屏幕倍率  处理方案:******
+
+		<meta name="viewport" id="vp" content="width=decive-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>		
+
+		<script type="text/javascript">
+			var rem = document.documentElement.offsetWidth / 6.4 * window.devicePixelRatio;
+			document.getElementsByTagName("html")[0].style.fontSize = rem + "px";
+			var rto = 1/window.devicePixelRatio;
+			document.getElementById("vp").content = "width=decive-width,initial-scale="+rto+",minimum-scale="+rto+",maximum-scale="+rto+",user-scalable=no"
+		</script>
+
+
+
+
+
+********某些安卓机型不支持viewport是1 
+以外的情况，也就是说：某些机型只认识viewport是1的情况：
+处理方案：不改变viewport
+
+
+		<meta name="viewport" id="vp" content="width=decive-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>		
+
+		<script type="text/javascript">
+			var rem = document.documentElement.offsetWidth / 6.4 ;
+			document.getElementsByTagName("html")[0].style.fontSize = rem + "px";
+		</script>
+
+
+
+

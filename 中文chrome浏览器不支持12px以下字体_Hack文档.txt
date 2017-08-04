@@ -1,0 +1,17 @@
+
+
+	http://www.cnblogs.com/dyllove98/archive/2013/08/04/3237042.html
+
+
+	中文版Chrome浏览器不支持12px以下字体的解决方案 - jlins - 博客园 
+
+	http://www.cnblogs.com/dyllove98/archive/2013/08/04/3237042.html
+
+
+
+	1、.classstyle{ -webkit-text-size-adjust:none; font-size:9px; }
+
+	2、.chrome_adjust {
+    		 font-size: 9px;
+		-webkit-transform: scale(0.75);
+	    }

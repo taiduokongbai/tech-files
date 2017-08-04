@@ -1,0 +1,11 @@
+2¡¢promiseÁ´Ê½µ÷ÓÃajax
+var promise1 = $.ajax(url1);
+var promise2 = promise1.then(function(data){
+    return $.ajax(url2, { data: data });
+});
+var promise3 = promise2.then(function(data){
+    return $.ajax(url3, { data: data });
+});
+promise3.done(function(data){
+    // data retrieved from url3
+});

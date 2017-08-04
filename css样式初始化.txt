@@ -1,0 +1,15 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,a,img,input,ul,ol,dl,li,dd,dt{padding:0;margin:0}
+input{outline:none;}
+img{border:0;display:block;}
+ul,ol{list-style:none;}
+body{font:14px/2 "Î¢ÈíÑÅºÚ"}
+a{text-decoration:none;color:#666;}
+a:hover{text-decoration:none;color:red;}
+
+
+
+.w{width:966px;margin:0 auto;}
+.l{float:left;}
+.r{float:right;}
+body{width:1000px;margin:0 auto;}

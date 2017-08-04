@@ -1,0 +1,31 @@
+//ËÑË÷·ûºÅ
+
+1rem = 100px;
+
+
+div.header_search{
+	display: block;
+	border-radius: 0.8rem;
+	margin:0.1rem 0.15rem 0.09rem 0.08rem;
+	line-height:0.3rem;
+	color:#666;
+	text-align: left;
+	border:0.02rem solid #676767;
+	width:0.12rem;
+	height:0.12rem;
+	position:relative;
+	top:0;
+	left:0.01rem;
+}
+
+div.header_search::after{
+	content: "";
+	display: block;
+	width:0.09rem;
+	height:0.12rem;
+	border-top:0.02rem solid #666;
+	transform: rotate(45deg);
+	position:absolute;
+	right:-0.03rem;
+	bottom: -0.14rem;
+}

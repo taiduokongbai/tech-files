@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<style type="text/css">
+	tr:nth-child(2n+1) {
+		background: skyblue;
+	}
+	td {
+		height: 30px;
+		width: 150px;
+	}
+</style> 
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myCtrl">  
+        <div ng-repeat="x in data">
+            <h2>{{x.name}}</h2>
+            <span>{{x.price}}</span>
+            <button ng-click="minusCount(x)">-</button>
+            <input type="number" ng-model="x.count">
+            <button ng-click="addCount(x)">+</button>
+        </div>
+        <shop-cart list="data"></shop-cart>
+    </div> 
+    
+<script>
+var app = angular.module("myApp", []);  
+	app.controller('myCtrl', ['$scope', function ($scope) {  
+	    $scope.data = [
+	        {name: "麦辣鸡腿堡", price: "¥8", count: 0},
+	        {name: "美国进口薯条", price: "¥7", count: 0},
+	        {name: "劲爆鸡米花", price: "¥6", count: 0},
+	        {name: "老北京鸡肉卷", price: "¥8", count: 0},
+	    ];
+
+
+	    $scope.addCount = function(rowData) {
+	        console.log(rowData);
+	        rowData.count++;
+	    }
+
+	    $scope.minusCount = function(rowData) {
+	        console.log(rowData);
+	        
+	        if(rowData.count > 0) {
+	            rowData.count--;
+	        }
+	    }
+	}  
+	]);  
+
+
+app.directive("shopCart", function () {  
+    return {  
+        restrict: 'AE',  
+        scope: { list: '=' },  
+        template: "<ul><li ng-repeat='x in list' ng-if='x.count > 0'><h2>{{x.name}}</h2><span>{{x.count}}</span></li></ul>" 
+    } 
+});
+
+
+</script>
+
+</body>
+</html>

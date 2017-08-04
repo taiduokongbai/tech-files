@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			html,body {
+				width: 100%;
+				height: 100%;
+				background: #f3f2f3;
+			}
+			
+			#main {
+				border: 1px solid red;
+				width: 1225px;
+				margin: 0 auto;
+			}
+			
+			.column {
+				width: 245px;
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="main">
+			<div class="column">
+				<!--<img src="img/1.jpg" width="245">-->			
+			</div>
+			<div class="column">
+				<!--<img src="img/2.jpg" width="245">-->			
+			</div>
+			<div class="column">
+				<!--<img src="img/3.jpg" width="245">-->	
+			</div>
+			<div class="column">
+				<!--<img src="img/4.jpg" width="245">-->	
+			</div>
+			<div class="column">
+				<!--<img src="img/5.jpg" width="245">-->	
+			</div>
+		</div>
+		<input type="button" name="" id="load" value="图片" onclick="init();" />
+		<script>
+			//瀑布流---针对图片布局
+			var cols = document.getElementById("main").children;
+
+			//瀑布流图片要先加载，否则得不到高度
+			function init() {
+				var count = 0;
+				for(var i = 1; i <= 20; i++) {
+					var img = new Image(); 
+					img.src = "img/" + i + ".jpg";
+					img.onload = function() { //图片有onload事件，
+						count++;
+						if(count == 20) {
+							loadImg(); //当我图片加载完成之后，然后调用loadImg（）
+						}
+					}
+				}	
+			}
+
+			function loadImg() {
+				for(var i = 1; i <= 20; i++) {
+					var oImg = document.createElement("img");
+					oImg.src = "img/" + i + ".jpg";
+					oImg.width = "245";
+					//一次把一张图片，找到该放的位置，找到应该放的列
+					//找到最短列
+					var minH = cols[0].offsetHeight; //定义一个变量minH，保存最短列的高度，先假设最短列是第一列
+					var index = 0; //定义一个变量，保存最短列的下标
+					for(var j = 0; j < 5; j++) {
+						if(cols[j].offsetHeight < minH) {
+							minH = cols[j].offsetHeight;
+							index = j;
+						}
+					}
+					//alert(index);
+					cols[index].appendChild(oImg);
+				}
+			}
+			
+		</script>
+	</body>
+
+</html>

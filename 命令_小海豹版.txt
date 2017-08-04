@@ -1,0 +1,49 @@
+1.gulp命令
+registry = https://registry.npm.taobao.org  安装淘宝镜像
+切盘符，cd但文件路径
+cnpm install-g gulp  安装gulp
+cnpm inatall  生成node-moudle
+gulp bulid 
+gulp     编辑后每次都要执行gulp
+
+2.bower命令
+切盘符，cd但文件路径
+bower install jquery 默认下载最新版本jq
+bower info jquery 查看所有版本
+bower install jquery#1.7  选择的版本
+bower install bootstrap 下载bootstrap，会告诉你配合的jq
+bower search xxxx文件名  查找包
+
+3.es6 babel ECMA环境配置
+首先做配置文件
+.babelrc
+文件重命名命令
+rename 1.txt .babelrc
+环境配置需要运行的命令
+npm install --save-dev babel-preset-es2015
+npm install --save-dev babel-preset-react
+npm install --save-dev babel-preset-stage-2
+转码命令
+npm install --global babel-cli
+babel-node  script.js 运行es6进行测试
+
+4.socket协议命令
+cnpm init 生成package.json 文件
+cnpm install express --save 安装文件，并把这个组件设定信息保存到json文件里
+noade app.js 启动APP服务
+
+5.Applican 混合开发
+在文件夹里新建 node.js 文件
+cnpm install -g phonegap
+cnpm install -g cordove
+
+6.打包发布
+cordove platform add android(ios)
+cordove build android 第一次打包时间长因为需要下载Gradleicon.png
+
+7.webpack React
+cnpm install -g webpack 安装webpack
+cnpm init  生成package.json文件
+cnpm install webpack 
+webpack-dev- server--hot--inline
+ 

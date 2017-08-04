@@ -1,0 +1,133 @@
+1、CSS 组合选择符 | 菜鸟教程 
+  http://www.runoob.com/css/css-combinators.html
+2、CSS 选择器参考手册   
+  http://www.w3school.com.cn/cssref/css_selectors.asp
+3、PenguinMark 浏览器质量检测
+  https://msedgeportal.trafficmanager.net/en-us/microsoft-edge/testdrive/demos/PenguinMark/
+4、扣丁学堂-iOS培训|Android培训|HTML5培训|UI培训|PHP培训教育品牌领导者 
+  http://www.codingke.com/
+5、css多列等高-利用padding-bottom|margin-bottom正负值相抵-css教程-懒人建站 
+  http://www.51xuediannao.com/html+css/htmlcssjq/683.html
+6、Emmet 生成 HTML 的语法 
+  https://www.douban.com/note/275432301/
+7、前端开发必备！Emmet使用手册_Emmet 教程_w3cplus 
+  http://www.w3cplus.com/tools/emmet-cheat-sheet.html
+
+
+
+8、CSS 分组和嵌套 | 菜鸟教程 
+  http://www.runoob.com/css/css-grouping-nesting.html
+9、CSS 组合选择符 | 菜鸟教程
+  http://www.runoob.com/css/css-combinators.html
+10、CSS 属性选择器 | 菜鸟教程     
+  http://www.runoob.com/css/css-attribute-selectors.html
+11、CSS 选择器参考手册     
+  http://www.w3school.com.cn/cssref/css_selectors.asp
+12、网页头部lang属性
+  https://www.douban.com/group/topic/80688473/
+
+13、css选择器中:first-child与:first-of-type的区别 - 无双 - 博客园       
+  http://www.cnblogs.com/2050/p/3569509.html
+
+
+14、CDN到底用还是不用
+  http://www.mamicode.com/info-detail-1580439.html
+
+15、jQuery.get() | jQuery API Documentation
+ http://api.jquery123.com/jQuery.get/
+
+
+16、sass入门 - sass教程 
+  http://www.w3cplus.com/sassguide/
+
+
+
+
+
+
+15、jQuery插件开发精品教程，让你的jQuery提升一个台阶 - 刘哇勇 - 博客园 http://www.cnblogs.com/Wayou/p/jquery_plugin_tutorial.html
+15、充分理解这几张图，你就是js小牛了 - 笔记 - 前端网（W3Cfuns）
+   http://www.w3cfuns.com/notes/16115/2949efbf88d86f01fe4fadab65c47dd6.html
+
+
+16、分享一些前端开发中最常用的JS代码片段~ 干货~ - 笔记 - 前端网（W3Cfuns）
+  http://www.w3cfuns.com/notes/25068/1d0d350a974d879e63f1115cf80a3288.html
+
+17、JavaScript - 精品书籍 - 前端网（W3Cfuns）
+  http://www1.w3cfuns.com/forum.php?mod=forumdisplay&fid=139&filter=typeid&typeid=179
+
+18、jQuery API 中文文档 -- jQuery 中文网
+  http://www.jquery123.com/
+
+
+
+19、正则表达式：注册和登录使用 - hunhun1122的专栏 - 博客频道 - CSDN.NET     http://blog.csdn.net/hunhun1122/article/details/52327797
+
+
+20、http://blog.csdn.net/ityuany/article/details/4906961
+
+
+21、 Can I use... Support tables for HTML5, CSS3, etc http://caniuse.com/
+
+22、
+ 	http://www.css88.com/book/css/hack/selectors.htm
+
+23、CMD   http://seajs.org/
+
+24、WebGL Water http://www.html5tricks.com/demo/webgl-water/index.html
+
+25、https://threejs.org/
+
+26、http://www.daimabiji.com/codedemo/2044
+
+27、http://www.ktng.com/
+
+
+28、常见的url chame
+你所知道好玩有趣的 iOS URL Scheme 有哪些？ - 调查类问题 - 知乎 https://www.zhihu.com/question/19907735
+
+29、swiper 中文文档
+http://www.swiper.com.cn/api/index.html
+
+
+30、sass语法 http://www.w3cplus.com/sassguide/syntax.html
+
+
+31、博客里有很多课外知识
+
+http://www.cnblogs.com/zfc2201/archive/2012/06/22/2558471.html
+
+
+
+
+32、ECMAScript 6 入门 - ECMAScript 6入门 http://es6.ruanyifeng.com/
+
+
+
+33、JavaScript中的预解析机制 - 花滿樓 - 博客园 http://www.cnblogs.com/suliang1100/p/4464442.html
+
+
+
+
+34、学习AngularJs:Directive指令用法（完整版）
+
+	http://www.jb51.net/article/83051.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

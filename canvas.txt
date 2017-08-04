@@ -1,0 +1,14 @@
+----------canvas-----------
+
+
+        // context.fillStyle//填充的样式
+        // context.fill()//填充
+
+        // context.stroke()//绘制边框
+        // context.strokeStyle//边框样式
+        // context.lineWidth//图形边框宽度
+
+
+	    // context.fillRect(x,y,width,height)  // 填充方形
+	    // context.strokeRect(x,y,width,height)  // 绘制方形边框
+	    // 清除矩形区域 context.clearRect(x,y,width,height)
